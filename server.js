@@ -86,7 +86,7 @@ gameSocket = io.on('connection', function (socket) {
 			errorMessage = {"errorMessage": err.message}
 			socket.emit("error message", errorMessage)
 		}
-	}); 
+	}); 	
 
 	console.log('socket connected: ' + socket.id);
 	socket.emit('connected', {});
